@@ -1,0 +1,43 @@
+{
+    "name": "ameotoko/contao-random-password",
+    "type": "contao-bundle",
+    "description": "Random password generator wizard for password fields in Contao CMS",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Andrey Vinichenko",
+            "homepage": "https://github.com/ameotoko"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "contao/core-bundle": "^4.9",
+        "symfony/config": "^4.4 || ^5.1",
+        "symfony/dependency-injection": "^4.4 || ^5.1",
+        "symfony/http-kernel": "^4.4 || ^5.1"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "contao/easy-coding-standard": "^3.1"
+    },
+    "extra": {
+        "contao-manager-plugin": "Ameotoko\\RandomPassword\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ameotoko\\RandomPassword\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/ameotoko/contao-random-password/issues",
+        "source": "https://github.com/ameotoko/contao-random-password"
+    },
+    "scripts": {
+        "cs-fixer": [
+            "vendor/bin/ecs check src/ --fix --ansi"
+        ]
+    }
+}
