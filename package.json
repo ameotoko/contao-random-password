@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "omgopass": "^3.2.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  },
+  "private": true,
+  "source": "index.js",
+  "global": "public/omgopass.min.js",
+  "targets": {
+    "global": {
+      "context": "browser",
+      "outputFormat": "global"
+    }
+  },
+  "scripts": {
+    "build": "parcel build --no-source-maps"
+  }
+}

@@ -2,6 +2,7 @@
 /composer.lock
 /vendor/
 
-# PhpUnit
-/.phpunit.result.cache
-/phpunit.xml
+# Assets
+/node_modules/
+/.parcel-cache/
+/package-lock.json

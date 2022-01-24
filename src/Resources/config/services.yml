@@ -1,3 +1,9 @@
 services:
     _defaults:
         autoconfigure: true
+
+    Ameotoko\RandomPassword\EventListener\RandomPasswordWizard:
+        arguments:
+            - '@request_stack'
+            - '@contao.routing.scope_matcher'
+            - '@assets.packages'
